@@ -1,0 +1,28 @@
+
+C:\Users\KIYOKO\Desktop\TEST>mkdir git_challenge
+
+C:\Users\KIYOKO\Desktop\TEST>cd git_challenge
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git init
+Initialized empty Git repository in C:/Users/KIYOKO/Desktop/TEST/git_challenge/.git/
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>echo "Hello, world!" >> hello_world.txt
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git add hello_world.txt
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git commit -m "hello_world.txtを追加"
+[master (root-commit) d8d33a5] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>echo "こんにちは、世界！" >> hello_world.txt
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git add hello_world.txt
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git commit -m "日本語訳を追記"
+[master 5af2f2c] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+C:\Users\KIYOKO\Desktop\TEST\git_challenge>git log --oneline
+5af2f2c (HEAD -> master) 日本語訳を追記
+d8d33a5 hello_world.txtを追加
